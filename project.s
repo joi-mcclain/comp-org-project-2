@@ -6,3 +6,6 @@
   numericInput:   .space 4
 .text
   main:
+    a $a0, userInput
+    li $v0, 8
+    syscall
