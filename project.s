@@ -21,3 +21,5 @@
     li $s2, 1
     la $a1, numericInput
     sb $t0, 0($a1)
+    lb $t0, 1($a0)
+    sb $t0, 1($a1)
