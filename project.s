@@ -12,3 +12,8 @@
     li $t1, 10
     li $t2, 32
     li $s2, 0
+  spacesCheck:
+    lb $t0, 0($a0)
+    beq $t0, $t1, spacesFound 
+    beq $t0, $t2, skip
+    beqz $t0, spacesFound
