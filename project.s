@@ -9,3 +9,6 @@
     a $a0, userInput
     li $v0, 8
     syscall
+    li $t1, 10
+    li $t2, 32
+    li $s2, 0
