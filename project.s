@@ -17,3 +17,7 @@
     beq $t0, $t1, spacesFound 
     beq $t0, $t2, skip
     beqz $t0, spacesFound
+    bne $s2, $zero, printLongInput 
+    li $s2, 1
+    la $a1, numericInput
+    sb $t0, 0($a1)
